@@ -1,0 +1,44 @@
+/* The Grid Container */
+.grid-container {
+  background-color: #ff7052;
+
+  /*-*-*-*-*-*-*-* initiating a grid layout *-*-*-*-*-*-*-*/
+  display: grid;
+
+  /*--++--**--++--**--++--* ^^^^@@ "The Grid Container Properties" @@^^^^ *--++--**--++--**--++--**/
+
+  /***--**--**--** The Repeat Function ***--**--**--**-------------------+-+-+-+-+-+-+-+-+-*/
+
+  /* Property Value can be:
+                            repeat(#rows/cols, track-size) */
+
+  /* grid-template-columns: 150px 150px 150px 150px; */
+  /* grid-template-rows: 150px 150px 150px; */
+  grid-gap: 25px;
+
+  /* grid-template-columns: repeat(4, 150px); */
+  /* grid-template-rows: repeat(3, 150px); */
+
+  /***--**--**--** The fr Unit (Fractional Unit) ***--**--**--**-------------------+-+-+-+-+-+-+-+-+-*/
+
+  /* Property Value can be:
+                            fr */
+
+  grid-template-columns: repeat(3, 150px) 1fr;
+  /* grid-template-columns: repeat(3, 150px) 0.5fr; */
+  /* grid-template-columns: 1fr 2fr 2fr 1fr; */
+  /* grid-template-columns: 1fr 2fr 3fr 4fr; */
+  /* grid-template-columns: 150px 1fr 50% 1fr; */
+
+  /* grid-gap: 100px; */
+
+  height: 600px; /* comment in for grid-temp-rows fr unit to be visualized */
+  /* grid-template-rows: repeat(3, 1fr); */
+  /* grid-template-rows: repeat(2, 100px) 1fr; */
+  grid-template-rows: repeat(2, 100px) 0.5fr;
+}
+
+/* The Grid Items */
+.item {
+  background-color: #fcc006;
+}

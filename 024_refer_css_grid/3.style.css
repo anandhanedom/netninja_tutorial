@@ -1,0 +1,76 @@
+/* The Grid Container */
+.grid-container {
+  background-color: #ff7052;
+
+  /*-*-*-*-*-*-*-* initiating a grid layout *-*-*-*-*-*-*-*/
+  display: grid;
+
+  grid-template-columns: 150px 150px 150px 150px;
+  grid-template-rows: 150px 150px 150px;
+
+  /*--++--**--++--**--++--* ^^^^@@ "The Grid Container Properties" @@^^^^ *--++--**--++--**--++--**/
+
+  /***--**--**--** Grid Column Gap Property ***--**--**--**-------------------+-+-+-+-+-+-+-+-+-*/
+
+  /* Property Values can be:
+                            (lenghts, percentages, viewport units) */
+
+  /* Old Syntax */
+  /* grid-column-gap: 10px; */
+  /* grid-column-gap: 1.5rem; */
+  /* grid-column-gap: 7vw; */
+  /* grid-column-gap: 5%; */
+
+  /* Standard Syntax */
+  /* column-gap: 10px; */
+  /* column-gap: 1.5rem; */
+  /* column-gap: 7vw; */
+  /* column-gap: 5%; */
+
+  /***--**--**--** Grid Row Gap Property ***--**--**--**-------------------+-+-+-+-+-+-+-+-+-*/
+
+  /* Property Values can be:
+                            (lenghts, percentages, viewport units) */
+
+  /* Old Syntax */
+  /* grid-row-gap: 10px; */
+  /* grid-row-gap: 1.5rem; */
+  /* grid-row-gap: 7vh; */
+  /* grid-row-gap: 5%; */
+
+  /* Standard Syntax */
+  /* row-gap: 10px; */
+  /* row-gap: 1.5rem; */
+  /* row-gap: 7vw; */
+  /* row-gap: 5%; */
+
+  /* Browser support for the standard syntax for column gap */
+  /* https://caniuse.com/#search=column%20gap */
+
+  /* Browser support for the standard syntax for row gap */
+  /* https://caniuse.com/#search=row%20gap */
+
+  /***--**--**--** Grid Gap Property (Shorthand for grid-column-gap and grid-row-gap) ***--**--**--**-------------------+-+-+-+-+-+-+-+-+-*/
+
+  /* Property Values can be:
+                            <grid-row-gap> <grid-column-gap> */
+
+  /* Old Syntax */
+  /* grid-gap: 15px 25px; */
+  /* grid-gap: 10% 15%; */
+  /* grid-gap: 5vh 15vw; */
+  /* grid-gap: 25px 10rem; */
+  /* grid-gap: 50px; */
+
+  /* Standard Syntax */
+  /* gap: 15px 25px; */
+  /* gap: 10% 15%; */
+  /* gap: 5vh 15vw; */
+  /* gap: 25px 10rem; */
+  /* gap: 50px; */
+}
+
+/* The Grid Items */
+.item {
+  background-color: #fcc006;
+}

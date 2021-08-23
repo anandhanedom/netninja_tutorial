@@ -1,0 +1,99 @@
+/* The Grid Container */
+.grid-container {
+  background-color: #ff7052;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 200px);
+
+  grid-gap: 15px;
+}
+
+/* The Grid Items */
+.item {
+  font-size: 4rem;
+  text-align: center;
+  line-height: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 3px;
+}
+
+/*--++--**--++--**--++--* ^^^^@@ "The Grid Items Properties" @@^^^^ *--++--**--++--**--++--**/
+
+.item-1 {
+  background-color: chartreuse;
+
+  /* Changing The Horizotal Position */
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  /* Changing The Vertical Position */
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.item-2 {
+  background-color: chocolate;
+}
+
+.item-3 {
+  background-color: cornflowerblue;
+}
+
+.item-4 {
+  background-color: olivedrab;
+
+  /* Changing The Horizotal/Vertical Positions Simultaneously */
+  /* Shorthand for both the rows and columns => row-start / col-start / row-end / col-end */
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.item-5 {
+  background-color: darkorchid;
+
+  /* Changing The Horizotal Position */
+  /* SH */
+  grid-row: 3 / 4;
+
+  /* Changing The Vertical Position */
+  /* SH */
+
+  grid-column: 2 / 3;
+}
+
+.item-6 {
+  background-color: darkseagreen;
+}
+
+.item-7 {
+  background-color: dimgrey;
+}
+
+.item-8 {
+  background-color: yellow;
+}
+
+.item-9 {
+  background-color: crimson;
+
+  /* Changing The Horizotal Position */
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  /* Changing The Vertical Position */
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.item-10 {
+  background-color: maroon;
+}
+
+.item-11 {
+  background-color: orange;
+}
+
+.item-12 {
+  background-color: thistle;
+}

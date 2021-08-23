@@ -1,0 +1,101 @@
+/* The Grid Container */
+.grid-container {
+  background-color: #ff7052;
+
+  display: grid;
+  height: 700px; /* declare a height greater than the collective height of the grid items for align-content property to be visualized */
+
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: repeat(2, 150px);
+
+  /* grid-gap: 25px; */ /* comment out for place-content property values to be visualized correctly */
+
+  /*--++--**--++--**--++--* ^^^^@@ "The Grid Container Properties" @@^^^^ *--++--**--++--**--++--**/
+
+  /***--**--**--** Justify Content Property ***--**--**--**-------------------+-+-+-+-+-+-+-+-+-*/
+
+  /* Property Values can be: 
+                              start | end | center | stretch (default) | space-around | space-between | space-evenly */
+
+  /* justify-content: stretch; */
+  /* justify-content: start; */
+  /* justify-content: end; */
+  /* justify-content: center; */
+  /* justify-content: space-around; */
+  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
+
+  /***--**--**--** Align Content Property ***--**--**--**-------------------+-+-+-+-+-+-+-+-+-*/
+
+  /* Property Values can be: 
+                              start | end | center | stretch (default) | space-around | space-between | space-evenly */
+
+  /* align-content: stretch; */
+  /* align-content: start; */
+  /* align-content: end; */
+  /* align-content: center; */
+  /* align-content: space-around; */
+  /* align-content: space-between; */
+  /* align-content: space-evenly; */
+
+  /***--**--**--** Place Content Property ***--**--**--**-------------------+-+-+-+-+-+-+-+-+-*/
+
+  /* Property Values can be: 
+                              <align-content> <justify-content> */
+
+  /* place-content: start end; */
+  /* place-content: start center; */
+  /* place-content: center; */
+  /* place-content: stretch center; */
+  /* place-content: space-around; */
+  /* place-content: space-between; */
+  /* place-content: space-evenly; */
+  /* place-content: space-around space-evenly; */
+  /* place-content: space-around space-between; */
+  /* place-content: space-between space-around; */
+  /* place-content: space-between space-evenly; */
+  /* place-content: space-evenly space-around; */
+  /* place-content: space-evenly space-between; */
+}
+
+/* The Grid Items */
+.item {
+  font-size: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 3px;
+}
+
+/*--++--**--++--**--++--* ^^^^@@ "The Grid Items Properties" @@^^^^ *--++--**--++--**--++--**/
+
+.item-1 {
+  background-color: chartreuse;
+}
+
+.item-2 {
+  background-color: chocolate;
+}
+
+.item-3 {
+  background-color: cornflowerblue;
+}
+
+.item-4 {
+  background-color: olivedrab;
+}
+
+.item-5 {
+  background-color: darkorchid;
+}
+
+.item-6 {
+  background-color: darkseagreen;
+}
+
+.item-7 {
+  background-color: dimgrey;
+}
+
+.item-8 {
+  background-color: yellow;
+}

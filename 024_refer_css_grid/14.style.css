@@ -1,0 +1,67 @@
+/* The Grid Container */
+.grid-container {
+  background-color: #ff7052;
+
+  display: grid;
+  /* grid-template-rows: repeat(2, minmax(150px, min-content)); */
+
+  /*--++--**--++--**--++--* ^^^^@@ "The Grid Container Properties Values" @@^^^^ *--++--**--++--**/
+
+  /***--**--**--** Auto Fill Property Value ***--**--**--**-------------------+-+-+-+-+-+-+-+-+-*/
+
+  /* width: 1500px; */
+  /* grid-template-columns: repeat(4, 150px); */
+  /* grid-template-columns: repeat(auto-fill, 150px); */
+
+  /***--**--**--** Auto Fit Property Value ***--**--**--**-------------------+-+-+-+-+-+-+-+-+-*/
+
+  /* grid-template-columns: repeat(auto-fit, 150px); */
+
+  /* Do not set the width of columns to the fr unit when working with auto-fit */
+  /* grid-template-columns: repeat(auto-fit, 1fr); */
+
+  /* Use the minmax function */
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+  /* Implicit Grid Row Track */
+  grid-auto-rows: minmax(150px, min-content);
+}
+
+/* The Grid Items */
+.item {
+  font-size: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 3px;
+}
+
+/*--++--**--++--**--++--* ^^^^@@ "The Grid Items Properties" @@^^^^ *--++--**--++--**--++--**/
+
+.item-1 {
+  background-color: chartreuse;
+}
+
+.item-2 {
+  background-color: chocolate;
+}
+
+.item-3 {
+  background-color: cornflowerblue;
+}
+
+.item-4 {
+  background-color: olivedrab;
+}
+
+.item-5 {
+  background-color: darkorchid;
+}
+
+.item-6 {
+  background-color: darkseagreen;
+}
+
+.item-7 {
+  background-color: blue;
+}

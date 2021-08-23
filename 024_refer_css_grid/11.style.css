@@ -1,0 +1,93 @@
+/* The Grid Container */
+.grid-container {
+  background-color: #ff7052;
+
+  display: grid;
+  grid-gap: 25px;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 100px);
+
+  /*--++--**--++--**--++--* ^^^^@@ "The Grid Container Properties" @@^^^^ *--++--**--++--**--++--**/
+
+  /***--**--**--** Grid Auto Rows Property ***--**--**--**-------------------+-+-+-+-+-+-+-+-+-*/
+
+  /* Property Values can be: 
+                              <track-size> (length, fr, viewport, percentages) */
+
+  /* grid-auto-rows: 150px; */
+
+  /***--**--**--** Grid Auto Flow Property ***--**--**--**-------------------+-+-+-+-+-+-+-+-+-*/
+
+  /* Property Values can be: 
+                              row (default) | column */
+
+  /* grid-auto-flow: row; */
+  grid-auto-flow: column;
+
+  /***--**--**--** Grid Auto Columns Property ***--**--**--**-------------------+-+-+-+-+-+-+-+-+-*/
+
+  /* Property Values can be: 
+                              <track-size> (length, fr, viewport, percentages) */
+
+  grid-auto-columns: 1fr;
+}
+
+/* The Grid Items */
+.item {
+  /* overflow: hidden; */
+  font-size: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 3px;
+}
+
+/*--++--**--++--**--++--* ^^^^@@ "The Grid Items Properties" @@^^^^ *--++--**--++--**--++--**/
+
+.item-1 {
+  background-color: chartreuse;
+}
+
+.item-2 {
+  background-color: chocolate;
+}
+
+.item-3 {
+  background-color: cornflowerblue;
+}
+
+.item-4 {
+  background-color: olivedrab;
+}
+
+.item-5 {
+  background-color: darkorchid;
+}
+
+.item-6 {
+  background-color: darkseagreen;
+}
+
+.item-7 {
+  background-color: dimgrey;
+}
+
+.item-8 {
+  background-color: yellow;
+}
+
+.item-9 {
+  background-color: dodgerblue;
+}
+
+.item-10 {
+  background-color: forestgreen;
+}
+
+.item-11 {
+  background-color: fuchsia;
+}
+
+.item-12 {
+  background-color: indigo;
+}

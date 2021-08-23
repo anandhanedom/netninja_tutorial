@@ -1,0 +1,89 @@
+/* The Grid Container */
+.grid-container {
+  background-color: #ff7052;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 150px);
+
+  grid-gap: 25px;
+}
+
+/* The Grid Items */
+.item {
+  font-size: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 3px;
+}
+
+/*--++--**--++--**--++--* ^^^^@@ "The Grid Items Properties" @@^^^^ *--++--**--++--**--++--**/
+
+.item-1 {
+  background-color: chartreuse;
+
+  /* Justify Self Property */
+
+  /* Property Values can be :
+                              stretch (default) | start | end | center */
+
+  /* justify-self: stretch; */
+  /* justify-self: start; */
+  /* justify-self: end; */
+  /* justify-self: center; */
+}
+
+.item-2 {
+  background-color: chocolate;
+
+  /* Align Self Property */
+
+  /* Property Values can be :
+                              stretch (default) | start | end | center */
+
+  /* align-self: stretch; */
+  /* align-self: start; */
+  /* align-self: end; */
+  /* align-self: center; */
+}
+
+.item-3 {
+  background-color: cornflowerblue;
+}
+
+.item-4 {
+  background-color: olivedrab;
+}
+
+.item-5 {
+  background-color: darkorchid;
+}
+
+.item-6 {
+  background-color: darkseagreen;
+}
+
+.item-7 {
+  background-color: dimgrey;
+}
+
+.item-8 {
+  background-color: yellow;
+
+  /* Place Self Property (shorthand for align-self & justify-self properties) */
+
+  /* Property Values can be :
+                              <align-self> <justify-self> */
+
+  /* place-self: stretch; */
+  /* place-self: start; */
+  /* place-self: end; */
+  /* place-self: center; */
+  /* place-self: start end; */
+  /* place-self: start center; */
+  /* place-self: center start; */
+  /* place-self: center end; */
+  /* place-self: end start; */
+  /* place-self: end center; */
+}

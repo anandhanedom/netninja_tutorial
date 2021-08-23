@@ -1,0 +1,30 @@
+/* The Grid Container */
+.grid-container {
+  background-color: #ff7052;
+
+  /*-*-*-*-*-*-*-* initiating a grid layout *-*-*-*-*-*-*-*/
+  display: grid;
+
+  /*--++--**--++--**--++--* ^^^^@@ "The Grid Container Properties" @@^^^^ *--++--**--++--**--++--**/
+
+  /***--**--**--** Grid Template Rows Property ***--**--**--**-------------------+-+-+-+-+-+-+-+-+-*/
+
+  /* Property Values can be:
+                            <track-size> (lenghts, percentages, viewport units or fractions)
+                            <line-name> (an arbitrary name of your choosing) */
+
+  grid-template-rows: 150px 150px 250px 5rem;
+
+  /***--**--**--** Grid Template Columns Property ***--**--**--**-------------------+-+-+-+-+-+-+-+-+-*/
+
+  /* Property Values can be:
+                            <track-size> (lenghts, percentages, viewport units or fractions)
+                            <line-name> (an arbitrary name of your choosing) */
+
+  grid-template-columns: 150px 150px;
+}
+
+/* The Grid Items */
+.item {
+  background-color: #fcc006;
+}
